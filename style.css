@@ -1039,3 +1039,22 @@ header h1 a {
 header h1 a:hover {
   opacity: 0.8;
 }
+.class-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.class-intro-text {
+  flex: 1;
+}
+
+.class-intro-image {
+  width: 30%;
+}
+
+.class-intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
