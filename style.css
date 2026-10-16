@@ -1058,3 +1058,53 @@ header h1 a:hover {
   height: auto;
   display: block;
 }
+
+/* =================================
+   RECIPE：メニューを一列に統一
+   ================================= */
+
+.recipe-names-single {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 30px;
+}
+
+.recipe-names-single .recipe-type {
+  width: 100%;
+  min-width: 0;
+}
+
+/* メニュー内の料理説明 */
+.recipe-names-single .recipe-type li p {
+  margin: 5px 0 10px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* スマートフォン */
+@media (max-width: 600px) {
+  .recipe-names-single {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* レッスン見出しに下線をつける */
+.recipe-type h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* レッスン見出しの下線 */
+.trial-title,
+.premium-title,
+.basic-title {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
